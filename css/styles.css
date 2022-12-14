@@ -89,6 +89,9 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -115,6 +118,9 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact .contacts:hover,
 .contact .contacts:focus {
@@ -171,6 +177,9 @@ body {
     min-width: 170px;
     display: inline-block;
     border: 1px solid transparent;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button.primary:hover,
 .button.primary:focus {
@@ -357,6 +366,9 @@ body {
 .portfolio-link {
     text-decoration: none;
     display: block;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-images,
 .studio-images {
@@ -402,6 +414,9 @@ body {
     display: inline-block;
     text-align: center;
     border: 1px solid var(--color-conflower);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button.prim:hover,
 .button.prim:focus {
@@ -441,6 +456,9 @@ body {
     height: 88px;
     border: 1px solid var(--color-slate);
     border-radius: 4px;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-items-icons:hover,
 .customers-items-icons:focus {
@@ -454,6 +472,9 @@ body {
 }
 .customers-icons {
     fill: currentColor;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-icons:hover,
 .customers-icons:focus {
@@ -516,6 +537,9 @@ body {
 }
 .footer-list-icon {
     fill: var(--cloud-color);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-list-link {
     display: flex;
@@ -525,6 +549,9 @@ body {
     height: 40px;
     border-radius: 50%;
     background-color: #FFFFFF1A;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-list-icon:hover,
 .footer-list-icon:focus {
