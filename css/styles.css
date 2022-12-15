@@ -347,15 +347,21 @@ body {
     margin-top: 48px;
     margin-left: 24px;
 }
+
+
 .portfolio-link {
     text-decoration: none;
     display: block;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
+    
 }
 .portfolio-link:hover,
 .portfolio-link:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.portfolio-link:hover .overlay,
+.portfolio-link:focus .overlay {
+transform: translate(0, 0);
 }
 .cards-portfolio {
     padding-top: 32px;
@@ -370,10 +376,19 @@ body {
 .studio-images {
     display: block;
 }
+.portfolio-img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    transform: translate(0, 100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--accent-color);
     font-family: 'Roboto';
     font-style: normal;
