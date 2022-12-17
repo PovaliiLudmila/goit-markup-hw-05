@@ -17,9 +17,9 @@
             <nav class="nav">
                 <a href="index.html" class="logo"><span class="logo-web">WEB</span>STUDIO</a>
                 <ul class="site-nav list">
-                    <li class="navigation"><a href="./index.html" class="link current">Studio</a></li>
-                    <li class="navigation"><a href="./portfolio.html" class="link">Portfolio</a></li>
-                    <li class="navigation"><a href=""class="link">Contacts</a></li>
+                    <li class="navigation"><a href="./index.html" class="link-menu">Studio</a></li>
+                    <li class="navigation"><a href="./portfolio.html" class="link-menu">Portfolio</a></li>
+                    <li class="navigation"><a href=""class="link-menu">Contacts</a></li>
                 </ul>
             </nav>
             <ul class="contact list">
@@ -32,7 +32,7 @@
     <!--Hero-->
         <section class="hero">
             <h1 class="hero-title">Effective Solutions<br/>for  Your Business</h1>
-            <button type="button" class="button primary">Order Service</button>
+            <button type="button" class="button primary" data-modal-open>Order Service</button>
         </section>
    
     <!--Benefits-->
@@ -354,14 +354,17 @@
                 </div>
             </div>
         </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="modal-close-btn">
+            <button type="button" class="modal-close-btn" data-modal-close>
                 <svg class="modal-close-btn-icon" width="8" height="8">
                     <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
                 </svg>
             </button>
         </div>
     </div>
+
+    <script src="./js/modal.js"></script>
 </body>
+
 </html>
