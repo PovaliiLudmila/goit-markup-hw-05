@@ -63,18 +63,16 @@ body {
 .link-menu::after {
     content: '';
     position: absolute;
-    width: 100%;
+    width: 0%;
     height: 4px;
     left: 0;
     bottom: 0;
     border-radius: 2px;
     background-color: var(--accent-color);
-    display: block;
-    box-sizing: border-box;
 }
-.link-menu:hover,
-.link-menu:focus {
-    color: var(--accent-color);
+.link-menu:hover::after,
+.link-menu:focus::after {
+    width: 100%;
 }
 .adress:not(:last-child) {
     margin-right: 40px;
