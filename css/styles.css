@@ -33,8 +33,6 @@ body {
     margin-right: auto;
 }
 .header-page {
-    padding-top: 24px;
-    padding-bottom: 24px;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .page-header-container {
@@ -49,30 +47,43 @@ body {
 .site-nav {
     display: flex;
     align-items: center;
+    font-weight: 700;
 }
 .navigation:not(:last-child) {
     margin-right: 40px;
+}
+.link-menu.current {
+    color: var(--accent-color);
+}
+.link-menu.current::after {
+    opacity: 1;
 }
 .link-menu {
     color: var(--navy-blue-color);
     position: relative;
     display: block;
     text-decoration: none;
-    padding: 10px 20px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .link-menu::after {
     content: '';
     position: absolute;
-    width: 0%;
+    width: 100%;
     height: 4px;
     left: 0;
     bottom: 0;
     border-radius: 2px;
     background-color: var(--accent-color);
+    display: block;
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
+
 .link-menu:hover::after,
 .link-menu:focus::after {
-    width: 100%;
+    opacity: 1;
 }
 .adress:not(:last-child) {
     margin-right: 40px;
